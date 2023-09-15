@@ -1,18 +1,21 @@
 #include <iostream>
-#include <string>
 using namespace std;
 
 int main(){
-    int n=13195;
-    int i=2;
-    while (i<13195){
-        if(n%i==0){
-            cout<<i;
-            n=n/i;
+    long long int n = 600851475143;
+    long long int i = 2;
+    while (i * i <= n) {
+        if(n % i == 0) {
+            cout << i << " ";
+            n = n / i;
         }
-        else{
-           i++;
+        else {
+            i++;
         }
-        
     }
+    if (n > 1) {
+        cout << n;
+    }
+
 }
+
