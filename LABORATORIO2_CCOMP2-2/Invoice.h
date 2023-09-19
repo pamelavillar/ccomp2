@@ -5,7 +5,9 @@ using namespace std;
 
 class Invoice{
     public:
-        Invoice(string anumber, string adescription, int aquantity, int aprice):number{anumber},description{adescription},quantity{aquantity},price{aprice},vat{0.2},discount{0}{
+        Invoice(string anumber, string adescription, int aquantity,
+        int aprice):number{anumber},description{adescription},
+        quantity{aquantity},price{aprice},vat{0.2},discount{0}{
             
         }
 
